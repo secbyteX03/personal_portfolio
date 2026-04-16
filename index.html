@@ -1,155 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magret Faith | UX Designer & Cybersecurity Specialist</title>
-  <meta name="description" content="Portfolio of Magret Faith, a full-stack developer and cyber risk analyst blending creative UX design, secure architecture, and smart automation." />
-  <meta name="keywords" content="Magret Faith, UX design, cybersecurity, web development, brand strategy, risk analysis, Kenya, developer portfolio" />
-  <meta name="author" content="Magret Faith" />
-  
-  <!-- Open Graph for social sharing -->
-  <meta property="og:title" content="Magret Faith | UX & Cybersecurity" />
-  <meta property="og:description" content="Creative portfolio showcasing user-first design and secure systems." />
-  <meta property="og:type" content="website" />
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
-  
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    
-    .redirect-container {
-      max-width: 600px;
-      padding: 2rem;
-      text-align: center;
-    }
-    
-    .redirect-title {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      background: linear-gradient(135deg, #00ff88, #00cc6a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
-    }
-    
-    .redirect-subtitle {
-      font-size: 1.2rem;
-      color: #cccccc;
-      margin-bottom: 2rem;
-      line-height: 1.6;
-    }
-    
-    .redirect-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: #00ff88;
-      color: #0a0a0a;
-      text-decoration: none;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-      border: 2px solid #00ff88;
-    }
-    
-    .redirect-button:hover {
-      background: transparent;
-      color: #00ff88;
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
-    }
-    
-    .redirect-info {
-      margin-top: 2rem;
-      padding: 1rem;
-      background: rgba(0, 255, 136, 0.1);
-      border: 1px solid rgba(0, 255, 136, 0.2);
-      border-radius: 8px;
-      font-size: 0.9rem;
-      color: #999999;
-    }
-    
-    .loading {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border: 2px solid #00ff88;
-      border-radius: 50%;
-      border-top-color: transparent;
-      animation: spin 1s linear infinite;
-      margin-left: 10px;
-    }
-    
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    
-    @media (max-width: 768px) {
-      .redirect-container {
-        padding: 1rem;
-      }
-      
-      .redirect-title {
-        font-size: 2rem;
-      }
-      
-      .redirect-subtitle {
-        font-size: 1rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="redirect-container">
-    <h1 class="redirect-title">Magret Faith</h1>
-    <p class="redirect-subtitle">
-      Cyber Risk Analyst | Blockchain Security Engineer | Security Strategist
-    </p>
-    <a href="/portfolio-react/" class="redirect-button">
-      Enter Portfolio
-      <span class="loading" id="loading" style="display: none;"></span>
-    </a>
-    <div class="redirect-info">
-      <strong>🚀 Faster Loading:</strong> This portfolio now runs on React for better performance and smoother interactions.<br>
-      Click above to launch the modern version.
-    </div>
-  </div>
 
-  <script>
-    // Auto-redirect after 3 seconds
-    setTimeout(() => {
-      document.getElementById('loading').style.display = 'inline-block';
-      setTimeout(() => {
-        window.location.href = '/portfolio-react/';
-      }, 500);
-    }, 3000);
-    
-    // Handle manual click
-    document.querySelector('.redirect-button').addEventListener('click', function(e) {
-      e.preventDefault();
-      document.getElementById('loading').style.display = 'inline-block';
-      setTimeout(() => {
-        window.location.href = '/portfolio-react/';
-      }, 300);
-    });
-  </script>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/portfolio-react/images/magret.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magret Faith | Cybersecurity & Blockchain Developer</title>
+  <meta name="description"
+    content="Portfolio of Magret Faith - Cybersecurity & Blockchain Developer focused on building secure payment systems and fraud prevention." />
+  <meta name="keywords"
+    content="Magret Faith, cybersecurity, blockchain, payment security, fraud prevention, Kenya, developer portfolio" />
+  <meta name="author" content="Magret Faith" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Magret Faith | Cybersecurity & Blockchain Developer" />
+  <meta property="og:description"
+    content="Building secure financial systems and preventing fraud in digital transactions." />
+  <meta property="og:type" content="website" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/portfolio-react/src/main.jsx"></script>
 </body>
+
 </html>
