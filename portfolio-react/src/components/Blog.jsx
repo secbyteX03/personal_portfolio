@@ -1,5 +1,5 @@
 import React from 'react'
-import { Medium, Linkedin, ArrowRight } from 'lucide-react'
+import { Linkedin, ArrowRight, PenLine } from 'lucide-react'
 import './Blog.css'
 
 const blogPosts = [
@@ -106,7 +106,7 @@ function Blog() {
           <div className="blog-social">
             <span>Follow my writing:</span>
             <a href="https://medium.com/@faithmagret" className="blog-social-link" target="_blank" rel="noopener noreferrer">
-              <Medium size={18} />
+              <PenLine size={18} />
             </a>
             <a href="https://linkedin.com/in/magretfaith" className="blog-social-link" target="_blank" rel="noopener noreferrer">
               <Linkedin size={18} />
