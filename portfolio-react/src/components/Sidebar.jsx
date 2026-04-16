@@ -99,7 +99,7 @@ export default function Sidebar({ onCollapseChange }) {
             />
           </div>
           <div className="profile-name">Magret Faith</div>
-          <div className="profile-title">Cyber-Savvy Technologist</div>
+          <div className="profile-title">Risk-Focused Security Builder</div>
         </div>
 
         <nav className="sidebar-nav">

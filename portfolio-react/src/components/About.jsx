@@ -8,21 +8,16 @@ export default function About() {
           <div className="about-text">
             <div className="section-header">About Me</div>
 
-            <h2 className="about-subtitle">
-              🎯 Mission
-            </h2>
-
             <p className="about-description">
-              <strong>Build secure and trustworthy financial systems.</strong> Reduce fraud in everyday
-              digital transactions. Apply risk analysis to real-world technology. Use blockchain to improve
-              transparency and trust.
+              I am a cybersecurity and blockchain developer focused on building secure, reliable digital systems.
+              My work centers on fraud prevention, payment security, and strengthening trust in digital transactions.
             </p>
 
             <p className="about-description" style={{ marginTop: '1rem' }}>
-              With a background in Actuarial Science, I bring a unique perspective to security—
-              thinking in terms of risk, patterns, and system vulnerabilities. I'm particularly interested
-              in how blockchain (including Stellar) can enable fast, verifiable, and low-cost transactions
-              for businesses and individuals.
+              With a background in Actuarial Science, I approach system design through a risk-focused lens,
+              analyzing patterns, identifying vulnerabilities, and building solutions that are both resilient and efficient.
+              I am particularly interested in leveraging blockchain technologies to enhance transparency, reduce fraud,
+              and improve access to secure financial services.
             </p>
 
             <a
