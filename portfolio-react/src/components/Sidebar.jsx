@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Home, User, Heart, Settings, Code, Folder, Phone, Linkedin, Twitter, Instagram, Github, Menu, X, FileText } from 'lucide-react';
+import { Home, User, Heart, Settings, Code, Folder, Phone, Linkedin, Twitter, Instagram, Github, Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import './Sidebar.css';
 
 const navItems = [
@@ -9,7 +9,7 @@ const navItems = [
   { id: 'services', label: 'Services', icon: Settings },
   { id: 'skills', label: 'Skills', icon: Code },
   { id: 'portfolio', label: 'Portfolio', icon: Folder },
-  { id: 'blog', label: 'Blog', icon: FileText },
+  { id: 'blog', label: 'Blog', icon: Folder },
   { id: 'contact', label: 'Contact', icon: Phone },
 ];
 
@@ -23,6 +23,7 @@ const socialLinks = [
 export default function Sidebar() {
   const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,6 +51,10 @@ export default function Sidebar() {
     }
   };
 
+  const toggleSidebar = () => {
+    setSidebarCollapsed(!sidebarCollapsed);
+  };
+
   return (
     <>
       {/* Mobile Menu Toggle */}
@@ -67,7 +72,17 @@ export default function Sidebar() {
       )}
 
       {/* Sidebar */}
-      <aside className={`sidebar ${mobileMenuOpen ? 'open' : ''}`}>
+      <aside className={`sidebar ${mobileMenuOpen ? 'open' : ''} ${sidebarCollapsed ? 'collapsed' : ''}`}>
+
+        {/* Collapse Toggle Button */}
+        <button
+          className="sidebar-collapse-toggle"
+          onClick={toggleSidebar}
+          aria-label={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+        >
+          {sidebarCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
+        </button>
+
         <div className="sidebar-header">
           <div className="profile-circle">
             <img
@@ -91,7 +106,7 @@ export default function Sidebar() {
               <span className="nav-icon">
                 <Icon size={18} />
               </span>
-              <span>{label}</span>
+              <span className="nav-label">{label}</span>
             </button>
           ))}
         </nav>
