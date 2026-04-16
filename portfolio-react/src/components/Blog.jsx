@@ -10,7 +10,7 @@ const blogPosts = [
     excerpt: 'How to implement effective fraud detection systems that protect customers without adding friction.',
     date: 'Nov 15, 2024',
     readTime: '6 min read',
-    image: '/images/Fraud-Dashboard.jpg',
+    image: '/images/blog-cybersecurity.svg',
     link: '#'
   },
   {
@@ -20,27 +20,27 @@ const blogPosts = [
     excerpt: 'A practical comparison of Stellar and Ethereum for secure, low-cost payment systems.',
     date: 'Nov 8, 2024',
     readTime: '7 min read',
-    image: '/images/infrastructure-as-Code-Demo.jpg',
+    image: '/images/blog-blockchain.svg',
     link: '#'
   },
   {
     id: 3,
     category: 'Risk Analysis',
     title: 'Applying Actuarial Science to Cybersecurity Risk',
-    excerpt: 'How my background in Actuarial Science helps me think about security risks and system vulnerabilities.',
+    excerpt: 'How my background in Actuarial Science helps me think about security risks.',
     date: 'Oct 28, 2024',
     readTime: '5 min read',
-    image: '/images/Risk-BI-Portal.jpg',
+    image: '/images/blog-risk-management.svg',
     link: '#'
   },
   {
     id: 4,
     category: 'Smart Contracts',
     title: 'Smart Contract Security: Common Vulnerabilities',
-    excerpt: 'A deep dive into most common smart contract vulnerabilities in DeFi applications.',
+    excerpt: 'A deep dive into most common smart contract vulnerabilities in DeFi.',
     date: 'Oct 15, 2024',
     readTime: '6 min read',
-    image: '/images/Vulnerability-as-Code-Toolkit.jpg',
+    image: '/images/blog-automation.svg',
     link: '#'
   },
   {
@@ -50,7 +50,7 @@ const blogPosts = [
     excerpt: 'Understanding the evolving threat landscape in digital payments.',
     date: 'Oct 2, 2024',
     readTime: '5 min read',
-    image: '/images/IoT-threat-Simulator.jpg',
+    image: '/images/blog-web-development.svg',
     link: '#'
   },
   {
@@ -60,7 +60,7 @@ const blogPosts = [
     excerpt: 'Essential security practices for businesses accepting Bitcoin and cryptocurrencies.',
     date: 'Sep 20, 2024',
     readTime: '4 min read',
-    image: '/images/mpesa-fraud-alert.jpg',
+    image: '/images/blog-ux-design.svg',
     link: '#'
   }
 ]
