@@ -4,83 +4,71 @@ import './Portfolio.css';
 
 const filters = [
   { id: 'all', label: 'All' },
-  { id: 'security', label: 'Cybersecurity' },
-  { id: 'blockchain', label: 'Blockchain' },
-  { id: 'fraud', label: 'Fraud Prevention' }
+  { id: 'payments', label: 'Payments' },
+  { id: 'security', label: 'Security' },
+  { id: 'blockchain', label: 'Blockchain' }
 ];
 
 const projects = [
   {
-    id: 'security-1',
-    category: 'security',
-    title: 'IoT Threat Simulator',
-    description: 'Simulates IoT and blockchain node vulnerabilities for security testing and risk assessment.',
-    image: '/images/IoT-threat-Simulator.jpg',
-    demoLink: '#',
-    githubLink: 'https://github.com/secbyteX03'
-  },
-  {
-    id: 'security-2',
-    category: 'security',
-    title: 'Secure Chatbot',
-    description: 'AI-powered secure chatbot with end-to-end encryption and real-time fraud risk detection.',
-    image: '/images/Secure-Chatbot.jpg',
-    demoLink: '#',
-    githubLink: 'https://github.com/secbyteX03'
-  },
-  {
-    id: 'fraud-1',
-    category: 'fraud',
-    title: 'Fraud Dashboard',
-    description: 'Real-time fraud detection dashboard monitoring payment rails and blockchain transactions with ML-powered risk scoring.',
-    image: '/images/Fraud-Dashboard.jpg',
-    demoLink: '#',
-    githubLink: 'https://github.com/secbyteX03'
-  },
-  {
-    id: 'fraud-2',
-    category: 'fraud',
-    title: 'M-Pesa Alert Engine',
-    description: 'Real-time M-Pesa transaction monitoring with fraud detection and blockchain-verified payment reconciliation.',
+    id: 'payments-1',
+    category: 'payments',
+    title: 'PILB',
+    description: 'Private, Instant, Low-Barrier Payments. Send money to any M-Pesa user in Kenya anonymously. Your identity is never revealed to the recipient.',
     image: '/images/mpesa-fraud-alert.jpg',
     demoLink: '#',
-    githubLink: 'https://github.com/secbyteX03'
+    githubLink: 'https://github.com/secbyteX03/pilb',
+    tech: 'TypeScript'
+  },
+  {
+    id: 'security-1',
+    category: 'security',
+    title: 's-pay',
+    description: 'Secure fraud detection backend for payment applications with Two-Factor Authentication (2FA), transaction monitoring, and real-time fraud detection.',
+    image: '/images/Fraud-Dashboard.jpg',
+    demoLink: '#',
+    githubLink: 'https://github.com/secbyteX03/s-pay',
+    tech: 'JavaScript'
   },
   {
     id: 'blockchain-1',
     category: 'blockchain',
-    title: 'Stellar Payment Integration',
-    description: 'Secure blockchain paymentrails built on Stellar for fast, low-cost, verifiable transactions.',
+    title: 'PayMint',
+    description: 'Decentralized marketplace that enables AI agents to register, offer paid services, and receive micropayments via x402 protocol on Stellar.',
     image: '/images/infrastructure-as-Code-Demo.jpg',
     demoLink: '#',
-    githubLink: 'https://github.com/secbyteX03'
+    githubLink: 'https://github.com/secbyteX03/PayMint',
+    tech: 'TypeScript'
+  },
+  {
+    id: 'security-2',
+    category: 'security',
+    title: 'Aegis_Desk',
+    description: 'Real-time collaborative incident response platform where human operators and AI agents work together in a synchronized workspace.',
+    image: '/images/IoT-threat-Simulator.jpg',
+    demoLink: '#',
+    githubLink: 'https://github.com/secbyteX03/Aegis_Desk',
+    tech: 'JavaScript'
+  },
+  {
+    id: 'payments-2',
+    category: 'payments',
+    title: 'Fraud Dashboard',
+    description: 'Real-time fraud detection dashboard monitoring payment rails and blockchain transactions with ML-powered risk scoring.',
+    image: '/images/Risk-BI-Portal.jpg',
+    demoLink: '#',
+    githubLink: 'https://github.com/secbyteX03',
+    tech: 'Python'
   },
   {
     id: 'blockchain-2',
     category: 'blockchain',
-    title: 'Vulnerability-as-Code Toolkit',
-    description: 'Automated security toolkit for smart contract vulnerability detection and blockchain node hardening.',
+    title: 'Risk BI Portal',
+    description: 'Enterprise risk intelligence portal tracking blockchain investment exposures and financial risk for institutions.',
     image: '/images/Vulnerability-as-Code-Toolkit.jpg',
     demoLink: '#',
-    githubLink: 'https://github.com/secbyteX03'
-  },
-  {
-    id: 'security-3',
-    category: 'security',
-    title: 'OWASP Security Audit',
-    description: 'Comprehensive security audit for fintech platforms ensuring OWASP standards and compliance.',
-    image: '/images/OWASP_Audit.jpg',
-    demoLink: '#',
-    githubLink: 'https://github.com/secbyteX03'
-  },
-  {
-    id: 'blockchain-3',
-    category: 'blockchain',
-    title: 'Risk BI Portal',
-    description: 'Enterprise risk intelligence portal tracking blockchain investment exposures and financial risk.',
-    image: '/images/Risk-BI-Portal.jpg',
-    demoLink: '#',
-    githubLink: 'https://github.com/secbyteX03'
+    githubLink: 'https://github.com/secbyteX03',
+    tech: 'JavaScript'
   }
 ];
 
@@ -120,11 +108,11 @@ export default function Portfolio() {
               >
                 <div className="portfolio-overlay">
                   <div className="portfolio-info">
-                    <div className="portfolio-category">{project.category}</div>
+                    <div className="portfolio-category">{project.category} • {project.tech}</div>
                     <h3>{project.title}</h3>
                     <p className="portfolio-description">{project.description}</p>
                     <div className="portfolio-links">
-                      <a
+                      {/* <a
                         href={project.demoLink}
                         className="portfolio-link"
                         target="_blank"
@@ -132,7 +120,7 @@ export default function Portfolio() {
                       >
                         <ExternalLink size={14} />
                         Demo
-                      </a>
+                      </a> */}
                       <a
                         href={project.githubLink}
                         className="portfolio-link"
@@ -157,7 +145,7 @@ export default function Portfolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View More Projects →
+            View More on GitHub →
           </a>
         </div>
       </div>
