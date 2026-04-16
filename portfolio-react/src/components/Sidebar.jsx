@@ -20,7 +20,7 @@ const socialLinks = [
   { icon: Github, href: 'https://github.com/secbyteX03', label: 'GitHub' },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ onCollapseChange }) {
   const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -42,6 +42,12 @@ export default function Sidebar() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (onCollapseChange) {
+      onCollapseChange(sidebarCollapsed);
+    }
+  }, [sidebarCollapsed, onCollapseChange]);
 
   const handleNavClick = (id) => {
     setMobileMenuOpen(false);

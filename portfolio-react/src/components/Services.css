@@ -1,172 +1,115 @@
 /* ============================================
-   SERVICES SECTION STYLES
+   SERVICES SECTION STYLES - MINIMAL CLEAN
    ============================================ */
 .services-section {
-  padding: var(--space-xl) var(--space-md);
+  padding: var(--spacing-section) var(--spacing-md);
   position: relative;
-  overflow: hidden;
-}
-
-.services-section::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 40%;
-  height: 200%;
-  background: radial-gradient(ellipse,
-      rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.03) 0%,
-      transparent 70%);
-  pointer-events: none;
 }
 
 /* Header & Intro */
 .services-header {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
 }
 
 .services-title {
   font-size: 2rem;
   font-weight: 700;
   color: var(--white);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--spacing-sm);
   line-height: 1.2;
-  text-align: center;
 }
 
 .services-intro {
   font-size: var(--font-md);
-  color: var(--gray);
+  color: var(--text-muted);
   max-width: 600px;
   margin: 0 auto;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-/* Cards Grid */
+/* Cards Grid - Clean 2x2 layout */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-lg);
-  margin-top: var(--spacing-xxl);
-  margin-bottom: var(--spacing-xxl);
-  width: 100%;
+  margin-top: var(--spacing-xl);
 }
 
+/* Service Card - Minimal Clean */
 .service-card {
-  background: linear-gradient(135deg,
-      rgba(15, 20, 25, 0.8) 0%,
-      rgba(30, 41, 59, 0.4) 100%);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 255, 136, 0.1);
-  border-radius: 20px;
-  padding: var(--spacing-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
   position: relative;
-  overflow: hidden;
-  transition: transform 0.4s ease, border-color 0.4s, box-shadow 0.4s;
+  transition: all var(--transition-normal);
   cursor: pointer;
-  width: 100%;
-  min-height: 380px;
-  display: flex;
-  flex-direction: column;
-}
-
-.service-card::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle,
-      rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.05) 0%,
-      transparent 70%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  border-color: rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.3);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
-    0 0 60px rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.1);
+  border-color: var(--primary-green);
+  background: var(--bg-card-hover);
 }
 
-.service-card:hover::after {
-  opacity: 1;
-}
-
-/* Icon, Title, Subtitle, Description */
+/* Icon - Simple clean circle */
 .service-card__icon {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg,
-      rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.2) 0%,
-      rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.1) 100%);
-  border: 2px solid rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.3);
-  border-radius: 16px;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid var(--primary-green);
+  border-radius: var(--border-radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: var(--space-lg);
-  transition: transform 0.4s ease, background 0.4s, border-color 0.4s;
-  position: relative;
-  z-index: 2;
+  margin-bottom: var(--spacing-md);
   color: var(--primary-green);
 }
 
 .service-card:hover .service-card__icon {
-  transform: scale(1.1) rotate(5deg);
-  background: linear-gradient(135deg,
-      rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.3) 0%,
-      rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.2) 100%);
-  border-color: rgba(var(--primary-green-r), var(--primary-green-g), var(--primary-green-b), 0.5);
+  background: var(--primary-green);
+  color: var(--text-black);
 }
 
+/* Title */
 .service-card__title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: var(--space-xs);
-  position: relative;
-  z-index: 2;
-}
-
-.service-card__subtitle {
-  font-size: 0.9rem;
-  color: var(--primary-green);
+  font-size: var(--font-lg);
   font-weight: 600;
-  margin-bottom: var(--space-sm);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  position: relative;
-  z-index: 2;
+  color: var(--white);
+  margin-bottom: var(--spacing-xs);
 }
 
+/* Subtitle - Clean accent */
+.service-card__subtitle {
+  font-size: var(--font-sm);
+  color: var(--primary-green);
+  font-weight: 500;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Description - Clean readable */
 .service-card__description {
-  color: var(--gray);
-  line-height: 1.7;
-  font-size: 0.95rem;
-  position: relative;
-  z-index: 2;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: var(--font-base);
 }
 
 /* Responsive */
-@media (max-width: 1200px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
   }
 
   .service-card {
-    min-height: auto;
+    padding: var(--spacing-lg);
   }
 
   .services-title {
-    font-size: 1.5rem;
+    font-size: var(--font-2xl);
+  }
+
+  .services-intro {
+    font-size: var(--font-base);
   }
 }

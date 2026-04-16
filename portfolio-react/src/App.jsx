@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './index.css'
 import Sidebar from './components/Sidebar'
 import Hero from './components/Hero'
@@ -10,10 +11,12 @@ import Blog from './components/Blog'
 import Contact from './components/Contact'
 
 function App() {
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
+
   return (
     <>
-      <Sidebar />
-      <main className="main-content">
+      <Sidebar onCollapseChange={setSidebarCollapsed} />
+      <main className={`main-content ${sidebarCollapsed ? 'sidebar-collapsed' : ''}`}>
         <Hero />
         <About />
         <Interests />

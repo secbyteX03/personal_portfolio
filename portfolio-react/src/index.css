@@ -397,6 +397,11 @@ h1 {
 .main-content {
   margin-left: var(--sidebar-width);
   min-height: 100vh;
+  transition: margin-left var(--transition-normal);
+}
+
+.main-content.sidebar-collapsed {
+  margin-left: 90px;
 }
 
 @media (max-width: 768px) {
