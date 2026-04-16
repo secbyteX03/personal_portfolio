@@ -1,4 +1,5 @@
 import React from 'react'
+import { Medium, Linkedin, ArrowRight } from 'lucide-react'
 import './Blog.css'
 
 const blogPosts = [
@@ -6,60 +7,60 @@ const blogPosts = [
     id: 1,
     category: 'Fraud Prevention',
     title: 'Building Real-Time Fraud Detection for Payment Systems',
-    excerpt: 'How to implement effective fraud detection systems that protect customers without adding friction to the transaction experience.',
+    excerpt: 'How to implement effective fraud detection systems that protect customers without adding friction.',
     date: 'Nov 15, 2024',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1a16a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+    image: '/images/Fraud-Dashboard.jpg',
     link: '#'
   },
   {
     id: 2,
     category: 'Blockchain',
     title: 'Stellar vs Ethereum: Choosing the Right Blockchain for Payments',
-    excerpt: 'A practical comparison of Stellar and Ethereum for building secure, low-cost payment systems.',
+    excerpt: 'A practical comparison of Stellar and Ethereum for secure, low-cost payment systems.',
     date: 'Nov 8, 2024',
     readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1639762681055-ee8a3d0a56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+    image: '/images/infrastructure-as-Code-Demo.jpg',
     link: '#'
   },
   {
     id: 3,
     category: 'Risk Analysis',
     title: 'Applying Actuarial Science to Cybersecurity Risk',
-    excerpt: 'How my background in Actuarial Science helps me think about security risks, patterns, and system vulnerabilities.',
+    excerpt: 'How my background in Actuarial Science helps me think about security risks and system vulnerabilities.',
     date: 'Oct 28, 2024',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1559063664-6188241cda3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+    image: '/images/Risk-BI-Portal.jpg',
     link: '#'
   },
   {
     id: 4,
     category: 'Smart Contracts',
     title: 'Smart Contract Security: Common Vulnerabilities',
-    excerpt: 'A deep dive into most common smart contract vulnerabilities and how to prevent them in DeFi applications.',
+    excerpt: 'A deep dive into most common smart contract vulnerabilities in DeFi applications.',
     date: 'Oct 15, 2024',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1639762681055-ee8a3d0a56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+    image: '/images/Vulnerability-as-Code-Toolkit.jpg',
     link: '#'
   },
   {
     id: 5,
     category: 'Threat Intel',
     title: 'Modern Threat Vectors in Digital Payments',
-    excerpt: 'Understanding the evolving threat landscape in digital payments and how to build resilient systems.',
+    excerpt: 'Understanding the evolving threat landscape in digital payments.',
     date: 'Oct 2, 2024',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1560472357041-6e3748b3a5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+    image: '/images/IoT-threat-Simulator.jpg',
     link: '#'
   },
   {
     id: 6,
     category: 'Blockchain',
     title: 'Bitcoin Security Best Practices for Businesses',
-    excerpt: 'Essential security practices for businesses accepting Bitcoin and other cryptocurrencies.',
+    excerpt: 'Essential security practices for businesses accepting Bitcoin and cryptocurrencies.',
     date: 'Sep 20, 2024',
     readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+    image: '/images/mpesa-fraud-alert.jpg',
     link: '#'
   }
 ]
@@ -91,7 +92,7 @@ function Blog() {
                 <h3 className="blog-title-card">{post.title}</h3>
                 <p className="blog-excerpt">{post.excerpt}</p>
                 <a href={post.link} className="blog-link">
-                  Read More <i className="fas fa-arrow-right"></i>
+                  Read More <ArrowRight size={14} />
                 </a>
               </div>
             </article>
@@ -100,15 +101,15 @@ function Blog() {
 
         <div className="blog-footer">
           <a href="#" className="blog-view-all">
-            View All Articles <i className="fas fa-arrow-right"></i>
+            View All Articles <ArrowRight size={16} />
           </a>
           <div className="blog-social">
             <span>Follow my writing:</span>
             <a href="https://medium.com/@faithmagret" className="blog-social-link" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-medium"></i>
+              <Medium size={18} />
             </a>
             <a href="https://linkedin.com/in/magretfaith" className="blog-social-link" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin-in"></i>
+              <Linkedin size={18} />
             </a>
           </div>
         </div>
