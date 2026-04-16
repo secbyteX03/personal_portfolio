@@ -7,20 +7,26 @@ export default function About() {
         <div className="about-content">
           <div className="about-text">
             <div className="section-header">About Me</div>
-            
+
             <h2 className="about-subtitle">
-              Model Risk. Build Secure. Scale Safely.
+              🎯 Mission
             </h2>
-            
+
             <p className="about-description">
-              Magret Faith is a Cyber Risk Analyst and Secure Systems Engineer with a BSc in Actuarial Science. I
-              combine actuarial risk modelling with security-first development to help startups and SMEs reduce
-              financial and operational risk. My work focuses on building resilient digital systems, integrating
-              automation, and designing secure payment and blockchain-enabled solutions.
+              <strong>Build secure and trustworthy financial systems.</strong> Reduce fraud in everyday
+              digital transactions. Apply risk analysis to real-world technology. Use blockchain to improve
+              transparency and trust.
             </p>
-            
-            <a 
-              href="/documents/MAGRET FAITH AKINYI CV.pdf" 
+
+            <p className="about-description" style={{ marginTop: '1rem' }}>
+              With a background in Actuarial Science, I bring a unique perspective to security—
+              thinking in terms of risk, patterns, and system vulnerabilities. I'm particularly interested
+              in how blockchain (including Stellar) can enable fast, verifiable, and low-cost transactions
+              for businesses and individuals.
+            </p>
+
+            <a
+              href="/documents/MAGRET FAITH AKINYI CV.pdf"
               className="cta-button"
               target="_blank"
               rel="noopener noreferrer"
@@ -31,9 +37,9 @@ export default function About() {
 
           <div className="photo-container">
             <div className="photo-wrapper">
-              <img 
-                src="/images/magret.jpg" 
-                alt="Profile Photo" 
+              <img
+                src="/images/magret.jpg"
+                alt="Profile Photo"
                 className="profile-photo"
                 loading="lazy"
               />

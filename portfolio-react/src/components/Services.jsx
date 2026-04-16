@@ -1,30 +1,30 @@
-import { Shield, Network, Settings, Laptop } from 'lucide-react';
+import { Shield, Wallet, TrendingUp, FileCheck } from 'lucide-react';
 import './Services.css';
 
 const services = [
   {
     icon: Shield,
     title: 'Cybersecurity & Risk Analysis',
-    subtitle: 'Threat modelling | Risk dashboards',
-    description: 'Vulnerability assessments, secure-by-design architecture, and incident playbooks that reduce operational and financial risk for SMEs.'
+    subtitle: 'Threat modeling | Risk assessment',
+    description: 'Vulnerability assessments, threat intelligence, and risk analysis to protect financial systems and prevent fraud.'
   },
   {
-    icon: Network,
-    title: 'Blockchain & Payment Rails',
-    subtitle: 'Smart contracts | Node & integration',
-    description: 'Audit-ready smart-contract development and payment-rail integrations (testnet deploys, node setup, and secure payment flows) to protect funds and automate settlements.'
+    icon: Wallet,
+    title: 'Blockchain & Payment Security',
+    subtitle: 'Smart contracts | Payment rails',
+    description: 'Secure blockchain integrations (Stellar, Ethereum) and payment system security to ensure safe, verifiable transactions.'
   },
   {
-    icon: Settings,
-    title: 'Automation & Integrations',
-    subtitle: 'Workflows | CI/CD',
-    description: 'Lightweight automations and integrations (CI/CD, payment hooks, admin workflows) that eliminate manual work, reduce errors, and speed time-to-market.'
+    icon: TrendingUp,
+    title: 'Fraud Prevention',
+    subtitle: 'Detection | Prevention systems',
+    description: 'Build systems that detect and prevent fraud in real-time, protecting businesses and customers from financial loss.'
   },
   {
-    icon: Laptop,
-    title: 'Digital Product & UX Design',
-    subtitle: 'Research | Prototyping',
-    description: 'User-centred design and accessible prototypes that improve conversions, reduce friction, and make security usable for real customers.'
+    icon: FileCheck,
+    title: 'Compliance & Audit',
+    subtitle: 'Security audits | Compliance',
+    description: 'OWASP security audits, compliance verification, and risk frameworks for financial services and fintech.'
   }
 ];
 
@@ -33,10 +33,10 @@ export default function Services() {
     <section className="services-section" id="services">
       <div className="container">
         <div className="services-header">
-          <div className="section-header">My Services & Expertise</div>
-          <h2 className="services-title">Solutions I Provide</h2>
+          <div className="section-header">My Expertise</div>
+          <h2 className="services-title">What I Do</h2>
           <p className="services-intro">
-            End-to-end product, automation, and security services for startups and SMEs.
+            Focused on building secure financial systems and preventing fraud in digital transactions.
           </p>
         </div>
 

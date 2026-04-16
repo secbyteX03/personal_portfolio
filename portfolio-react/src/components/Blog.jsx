@@ -4,62 +4,62 @@ import './Blog.css'
 const blogPosts = [
   {
     id: 1,
-    category: 'Cybersecurity',
-    title: 'Building Secure Authentication Systems in 2024',
-    excerpt: 'Exploring modern authentication patterns, from passwordless flows to multi-factor security, and how to implement them without compromising user experience.',
+    category: 'Fraud Prevention',
+    title: 'Building Real-Time Fraud Detection for Payment Systems',
+    excerpt: 'How to implement effective fraud detection systems that protect customers without adding friction to the transaction experience.',
     date: 'Nov 15, 2024',
-    readTime: '5 min read',
+    readTime: '6 min read',
     image: 'https://images.unsplash.com/photo-1563013544-824ae1a16a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
     link: '#'
   },
   {
     id: 2,
-    category: 'UX Design',
-    title: 'Accessibility-First Design for Financial Applications',
-    excerpt: 'How to design financial interfaces that are both secure and accessible, ensuring compliance with WCAG standards while maintaining robust security.',
+    category: 'Blockchain',
+    title: 'Stellar vs Ethereum: Choosing the Right Blockchain for Payments',
+    excerpt: 'A practical comparison of Stellar and Ethereum for building secure, low-cost payment systems.',
     date: 'Nov 8, 2024',
     readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1559063664-6188241cda3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1639762681055-ee8a3d0a56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
     link: '#'
   },
   {
     id: 3,
-    category: 'Blockchain',
-    title: 'Smart Contract Security: Common Vulnerabilities',
-    excerpt: 'A deep dive into most common smart contract vulnerabilities and how to prevent them, with real-world examples from DeFi security audits.',
+    category: 'Risk Analysis',
+    title: 'Applying Actuarial Science to Cybersecurity Risk',
+    excerpt: 'How my background in Actuarial Science helps me think about security risks, patterns, and system vulnerabilities.',
     date: 'Oct 28, 2024',
+    readTime: '5 min read',
+    image: 'https://images.unsplash.com/photo-1559063664-6188241cda3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+    link: '#'
+  },
+  {
+    id: 4,
+    category: 'Smart Contracts',
+    title: 'Smart Contract Security: Common Vulnerabilities',
+    excerpt: 'A deep dive into most common smart contract vulnerabilities and how to prevent them in DeFi applications.',
+    date: 'Oct 15, 2024',
     readTime: '6 min read',
     image: 'https://images.unsplash.com/photo-1639762681055-ee8a3d0a56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
     link: '#'
   },
   {
-    id: 4,
-    category: 'Web Development',
-    title: 'Performance Optimization for Secure Web Apps',
-    excerpt: 'Balancing security measures with application performance, and techniques to maintain fast load times while implementing robust security protocols.',
-    date: 'Oct 15, 2024',
-    readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1467232692858-6e11b9e5b0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
-    link: '#'
-  },
-  {
     id: 5,
-    category: 'Risk Management',
-    title: 'Implementing Zero Trust Architecture in Web Applications',
-    excerpt: 'Practical steps to implement zero trust security models in modern web applications, from authentication to data protection strategies.',
+    category: 'Threat Intel',
+    title: 'Modern Threat Vectors in Digital Payments',
+    excerpt: 'Understanding the evolving threat landscape in digital payments and how to build resilient systems.',
     date: 'Oct 2, 2024',
-    readTime: '8 min read',
+    readTime: '5 min read',
     image: 'https://images.unsplash.com/photo-1560472357041-6e3748b3a5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
     link: '#'
   },
   {
     id: 6,
-    category: 'DevOps',
-    title: 'Automating Security in CI/CD Pipelines',
-    excerpt: 'How to integrate security testing and vulnerability scanning into your development workflow without slowing down deployment cycles.',
+    category: 'Blockchain',
+    title: 'Bitcoin Security Best Practices for Businesses',
+    excerpt: 'Essential security practices for businesses accepting Bitcoin and other cryptocurrencies.',
     date: 'Sep 20, 2024',
-    readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1605858434052-76995625a7ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+    readTime: '4 min read',
+    image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
     link: '#'
   }
 ]
@@ -69,11 +69,10 @@ function Blog() {
     <section className="blog-section" id="blog">
       <div className="container">
         <div className="blog-header">
-          <div className="section-header">Latest Posts</div>
-          <h2 className="blog-title">Blog & Insights</h2>
+          <div className="section-header">Latest Insights</div>
+          <h2 className="blog-title">Blog & Writing</h2>
           <p className="blog-intro">
-            Thoughts on cybersecurity, UX design, web development, and the intersection of technology and human experience.
-            Sharing insights from building secure digital solutions.
+            Thoughts on cybersecurity, blockchain security, fraud prevention, and building trustworthy financial systems.
           </p>
         </div>
 
@@ -107,9 +106,6 @@ function Blog() {
             <span>Follow my writing:</span>
             <a href="https://medium.com/@faithmagret" className="blog-social-link" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-medium"></i>
-            </a>
-            <a href="https://dev.to/faithmagret" className="blog-social-link" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-dev"></i>
             </a>
             <a href="https://linkedin.com/in/magretfaith" className="blog-social-link" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin-in"></i>

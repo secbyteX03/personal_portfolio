@@ -1,31 +1,26 @@
-import { Gamepad2, BookOpen, Music, Dumbbell, Users } from 'lucide-react';
+import { Bitcoin, Globe, BookOpen, Users } from 'lucide-react';
 import './Interests.css';
 
 const interests = [
   {
-    icon: Gamepad2,
-    title: 'Gaming & Strategy',
-    subtitle: 'Problem-solving through chess, RPGs and complex puzzles'
+    icon: Bitcoin,
+    title: 'Crypto & DeFi',
+    subtitle: 'Exploring decentralized finance, Bitcoin security, and blockchain innovation'
+  },
+  {
+    icon: Globe,
+    title: 'Financial Inclusion',
+    subtitle: 'How blockchain can enable safe transactions for the unbanked'
   },
   {
     icon: BookOpen,
-    title: 'Tech Writing & Blogging',
-    subtitle: 'Sharing insights on risk analysis, development workflows & cybersecurity'
-  },
-  {
-    icon: Music,
-    title: 'Music & Arts',
-    subtitle: 'Drawing creativity from Afrobeats, jazz sessions & live performances'
-  },
-  {
-    icon: Dumbbell,
-    title: 'Fitness & Wellness',
-    subtitle: 'Staying sharp with gym sessions, yoga practice & mental health routines'
+    title: 'Tech Reading',
+    subtitle: 'Staying current with cybersecurity trends and risk modeling'
   },
   {
     icon: Users,
-    title: 'Tech Community',
-    subtitle: 'Empowering others via mentoring, workshops & collaborative hackathons'
+    title: 'Community',
+    subtitle: 'Mentoring and helping others break into tech'
   }
 ];
 
@@ -34,18 +29,17 @@ export default function Interests() {
     <section className="interests-section" id="interests">
       <div className="container">
         <div className="interests-header">
-          <div className="section-header">My Interests</div>
-          <h2 className="interests-title">Beyond the Code</h2>
+          <div className="section-header">What Drives Me</div>
+          <h2 className="interests-title">Beyond Security</h2>
           <p className="interests-subtitle">
-            When I&apos;m not securing systems or designing interfaces, you will
-            find me exploring these passions that keep me creative, balanced,
-            and constantly learning new perspectives.
+            My passions outside of cybersecurity that shape my approach to
+            building secure, trustworthy financial systems.
           </p>
         </div>
 
         <div className="interests-grid">
           {interests.map((interest, index) => (
-            <div 
+            <div
               key={interest.title}
               className="interest-card"
               style={{ animationDelay: `${index * 0.1}s` }}

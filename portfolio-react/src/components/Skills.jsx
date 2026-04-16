@@ -3,18 +3,18 @@ import './Skills.css';
 // SimpleIcons CDN slugs — always returns the correct official brand SVG
 // https://cdn.simpleicons.org/[slug]/[hex-color]
 const ICON_SLUGS = {
-  JavaScript: { slug: 'javascript', color: 'F7DF1E' },
-  CSS3: { slug: 'css3', color: '1572B6' },
-  HTML5: { slug: 'html5', color: 'E34F26' },
-  React: { slug: 'react', color: '61DAFB' },
   Python: { slug: 'python', color: '3776AB' },
   Solidity: { slug: 'solidity', color: '818CF8' },
-  GitHub: { slug: 'github', color: 'e2e8f0' },
+  Ethereum: { slug: 'ethereum', color: '627EEA' },
+  Stellar: { slug: 'stellar', color: '08B5E5' },
+  Bitcoin: { slug: 'bitcoin', color: 'F7931A' },
   Docker: { slug: 'docker', color: '2496ED' },
   Linux: { slug: 'linux', color: 'FCC624' },
+  'Security Auditing': { slug: 'shield', color: '00ff88' },
+  'Risk Analysis': { slug: 'chart', color: 'FF6B6B' },
+  'OWASP': { slug: 'lock', color: '003A70' },
   'CI/CD': { slug: 'githubactions', color: '2088FF' },
-  'Blockchain SDKs': { slug: 'ethereum', color: '00ff88' },
-  'Security Tools': { slug: 'letsencrypt', color: '003A70' },
+  'Python (Sec)': { slug: 'pythonsecurity', color: '3776AB' },
 };
 
 function BrandIcon({ name, size = 32 }) {
@@ -40,18 +40,18 @@ function BrandIcon({ name, size = 32 }) {
 }
 
 const skills = [
-  { name: 'JavaScript', level: 'Proficient' },
-  { name: 'CSS3', level: 'Proficient' },
-  { name: 'HTML5', level: 'Proficient' },
-  { name: 'React', level: 'Intermediate' },
-  { name: 'Python', level: 'Intermediate' },
+  { name: 'Python', level: 'Proficient' },
   { name: 'Solidity', level: 'Intermediate' },
-  { name: 'GitHub', level: 'Proficient' },
+  { name: 'Ethereum', level: 'Intermediate' },
+  { name: 'Stellar', level: 'Learning' },
+  { name: 'Bitcoin', level: 'Learning' },
   { name: 'Docker', level: 'Intermediate' },
   { name: 'Linux', level: 'Intermediate' },
+  { name: 'Security Auditing', level: 'Intermediate' },
+  { name: 'Risk Analysis', level: 'Proficient' },
+  { name: 'OWASP', level: 'Intermediate' },
   { name: 'CI/CD', level: 'Intermediate' },
-  { name: 'Blockchain SDKs', level: 'Intermediate' },
-  { name: 'Security Tools', level: 'Intermediate' },
+  { name: 'Python (Sec)', level: 'Intermediate' },
 ];
 
 export default function Skills() {
@@ -59,11 +59,10 @@ export default function Skills() {
     <section className="skills-section" id="skills">
       <div className="container">
         <div className="skills-header">
-          <div className="section-header">Skills &amp; Technologies</div>
-          <h2 className="skills-title">Core Technologies</h2>
+          <div className="section-header">Skills & Technologies</div>
+          <h2 className="skills-title">Security & Blockchain</h2>
           <p className="skills-intro">
-            Technologies I use to design, build, and secure digital systems, from risk modeling to blockchain
-            infrastructure.
+            Technologies I use to build secure systems, analyze risk, and develop blockchain solutions.
           </p>
         </div>
 

@@ -12,10 +12,10 @@ export default function Hero() {
     <section className="hero-section" id="home">
       {/* Animated Background */}
       <div className="hero-background">
-        <video 
-          autoPlay 
-          muted 
-          loop 
+        <video
+          autoPlay
+          muted
+          loop
           playsInline
           className="hero-video"
         >
@@ -30,25 +30,24 @@ export default function Hero() {
 
       {/* Content */}
       <div className="hero-content">
-        <p className="hero-greeting">Hello, I&apos;m</p>
+        <p className="hero-greeting">Hello, I'm</p>
         <h1 className="hero-title">Magret Faith</h1>
         <h2 className="hero-subtitle">
-          Cyber Risk Analyst | Blockchain Security Engineer | Security Strategist
+          Cybersecurity & Blockchain Developer | Building Secure Payment Systems
         </h2>
         <p className="hero-description">
-          I design digital products and brand systems for SMEs,
-          add automated workflows and secure development, and I&apos;m
-          expanding into blockchain engineering to build and secure
-          smart contracts, payment rails, and the ecosystems they power.
+          I build systems with security first—focusing on fraud prevention, transaction safety,
+          and trust in digital environments. My background in Actuarial Science helps me think
+          in terms of risk, patterns, and system vulnerabilities.
         </p>
         <div className="hero-buttons">
-          <button 
+          <button
             className="hero-btn-primary"
             onClick={() => handleScrollTo('portfolio')}
           >
             View My Work
           </button>
-          <button 
+          <button
             className="hero-btn-secondary"
             onClick={() => handleScrollTo('contact')}
           >
