@@ -1,0 +1,16 @@
+<!-- Placeholder for blog-ux-design.jpg -->
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="uxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#61DAFB;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1572B6;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#0a0a0a"/>
+  <rect width="400" height="200" fill="url(#uxGrad)" opacity="0.3"/>
+  <text x="200" y="100" font-family="Arial, sans-serif" font-size="24" fill="#61DAFB" text-anchor="middle">
+    UX Design
+  </text>
+  <rect x="50" y="50" width="60" height="40" fill="none" stroke="#61DAFB" stroke-width="2" opacity="0.6"/>
+  <rect x="290" y="110" width="60" height="40" fill="none" stroke="#61DAFB" stroke-width="2" opacity="0.4"/>
+</svg>

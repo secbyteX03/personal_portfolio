@@ -40,7 +40,7 @@ Experience the portfolio live:
 ### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/secbyteX03/portfolio.git
+git clone https://github.com/secbyteX03/personal_portfolio.git
 ```
 
 2. Open in your browser:

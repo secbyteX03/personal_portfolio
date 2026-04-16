@@ -1,0 +1,16 @@
+<!-- Placeholder for blog-web-development.jpg -->
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F7DF1E;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#E34F26;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#0a0a0a"/>
+  <rect width="400" height="200" fill="url(#webGrad)" opacity="0.3"/>
+  <text x="200" y="100" font-family="Arial, sans-serif" font-size="24" fill="#F7DF1E" text-anchor="middle">
+    Web Development
+  </text>
+  <text x="100" y="60" font-family="monospace" font-size="14" fill="#F7DF1E" opacity="0.8">&lt;/&gt;</text>
+  <text x="300" y="140" font-family="monospace" font-size="14" fill="#E34F26" opacity="0.8">{...}</text>
+</svg>
