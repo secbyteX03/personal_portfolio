@@ -10,7 +10,7 @@ const blogPosts = [
     excerpt: 'How to implement effective fraud detection systems that protect customers without adding friction.',
     date: 'Nov 15, 2024',
     readTime: '6 min read',
-    image: '/images/blog-cybersecurity.svg',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda79e38bd?w=600&h=400&fit=crop',
     link: '#'
   },
   {
@@ -20,7 +20,7 @@ const blogPosts = [
     excerpt: 'A practical comparison of Stellar and Ethereum for secure, low-cost payment systems.',
     date: 'Nov 8, 2024',
     readTime: '7 min read',
-    image: '/images/blog-blockchain.svg',
+    image: 'https://images.unsplash.com/photo-1639762681485-074c7dea0e91?w=600&h=400&fit=crop',
     link: '#'
   },
   {
@@ -30,7 +30,7 @@ const blogPosts = [
     excerpt: 'How my background in Actuarial Science helps me think about security risks.',
     date: 'Oct 28, 2024',
     readTime: '5 min read',
-    image: '/images/blog-risk-management.svg',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c01f?w=600&h=400&fit=crop',
     link: '#'
   },
   {
@@ -40,7 +40,7 @@ const blogPosts = [
     excerpt: 'A deep dive into most common smart contract vulnerabilities in DeFi.',
     date: 'Oct 15, 2024',
     readTime: '6 min read',
-    image: '/images/blog-automation.svg',
+    image: 'https://images.unsplash.com/photo-1518432031352-d6fc573393dc?w=600&h=400&fit=crop',
     link: '#'
   },
   {
@@ -50,7 +50,7 @@ const blogPosts = [
     excerpt: 'Understanding the evolving threat landscape in digital payments.',
     date: 'Oct 2, 2024',
     readTime: '5 min read',
-    image: '/images/blog-web-development.svg',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
     link: '#'
   },
   {
@@ -60,7 +60,7 @@ const blogPosts = [
     excerpt: 'Essential security practices for businesses accepting Bitcoin and cryptocurrencies.',
     date: 'Sep 20, 2024',
     readTime: '4 min read',
-    image: '/images/blog-ux-design.svg',
+    image: 'images/bitcoin-security.jpg',
     link: '#'
   }
 ]

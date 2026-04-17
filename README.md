@@ -4,7 +4,7 @@
 A responsive personal portfolio website showcasing my skills, projects, and background as a cybersecurity-certified developer and UX technologist.
 ## 🌟 Live Demo
 Experience the portfolio live:  
-[![Open in Netlify](https://img.shields.io/badge/Open_in-Netlify-00C7B7?logo=netlify)](https://faithmagret.netlify.app)
+[![Open in Vercel](https://img.shields.io/badge/Open_in-Vercel-000000?logo=vercel)](https://magretfaith.vercel.app)
 ## Features
 
 - **Modern Dark Theme** with vibrant green accents
@@ -14,66 +14,71 @@ Experience the portfolio live:
 - **Contact Form** for easy communication
 - **Mobile Navigation** with hamburger menu
 
-## 🏆 Hackathon Submission
-- This portfolio was created for the PLP Academy July 2025 Cohort Hackathon 1: Portfolio Challenge and includes all required sections:
-
-✅ **About Me** - Professional introduction and background  
-✅ **Skills** - Technical skills with visual proficiency indicators  
-✅ **Education** - Academic background with CV download  
-✅ **Interests** - Personal and professional passions  
-✅ **Projects** - Portfolio showcase with case studies  
-✅ **Contact** - Functional contact form and social links  
-
 ## Technologies Used
 
-- **HTML5** - Semantic markup structure
+- **React** - UI framework with component-based architecture
+- **Vite** - Next-generation build tooling
 - **CSS3** - Custom properties, animations, and responsive design
 - **Font Awesome** - Vector icons
-- **Netlify** - Deployment platform
+- **Vercel** - Deployment platform
 - **Git** - Version control
 
 ## Getting Started
 
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Safari, Edge)
+- Node.js (for local development)
 
 ### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/secbyteX03/personal_portfolio.git
+git clone https://github.com/secbyteX03/portfolio.git
 ```
 
-2. Open in your browser:
+2. Install dependencies:
 ```bash
-cd portfolio
-open index.html  # On macOS
-start index.html # On Windows
+cd portfolio/portfolio-react
+npm install
 ```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open in your browser:
+Navigate to http://localhost:5173/
 
 ## Project Structure
 
 ```
 portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # Custom CSS styles
-├── images/             # Project images
-│   ├── magret.jpg      # Profile photo
-│   └── herovideo.mp4   # Hero background video
-    └── project image
-    └──project image
-    └──project image
-    └──project image
-    └── project image
-    └──project image
-    └──project image
-    └──project image
-    └──project image
-├── documents/          #Supporting files
+├── portfolio-react/           # React + Vite application
+│   ├── src/
+│   │   ├── components/      # React components
+│   │   │   ├── About.jsx
+│   │   │   ├── Blog.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   ├── Hero.jsx
+│   │   │   ├── Interests.jsx
+│   │   │   ├── Portfolio.jsx
+│   │   │   ├── Services.jsx
+│   │   │   ├── Skills.jsx
+│   │   │   └── Sidebar.jsx
+│   │   ├── App.jsx          # Main App component
+│   │   ├── main.jsx         # Entry point
+│   │   └── index.css       # Global styles
+│   ├── public/
+│   │   ├── images/         # Portfolio images
+│   │   └── documents/      # CV and documents
+├── index.html              # Original static HTML version
+├── images/                 # Project images
+├── documents/              # Supporting files
 │   └── MAGRET FAITH AKINYI CV.pdf
-└── README.md           # This documentation
+└── README.md               # This documentation
 ```
-## Netlify Deployment
-**This project is deployed using Netlify with the following configuration:**
+## Vercel Deployment
+**This project is deployed using Vercel with the following configuration:**
 
 ✅ Continuous Deployment - Automatically deploys when pushing to main branch
 
@@ -81,18 +86,18 @@ portfolio/
 
 ✅ HTTPS - Secure connections enabled by default
 
-✅ Form Handling - Netlify forms integration (future implementation)
+✅ Preview Deployments - Preview changes before production
 
 **Deployment Steps**
 - Push your code to a GitHub repository
 
-- Log in to Netlify and select "New site from Git"
+- Log in to Vercel and select "Add New..."
 
 - Connect your GitHub account and select the repository
 
-- Configure build settings (no build command needed for static site)
+- Configure build settings (Framework Preset: Vite)
 
-- Click "Deploy site"
+- Click "Deploy"
 
 ## Key Design Elements
 
@@ -146,5 +151,3 @@ portfolio/
 **Developed by Magret Faith**  
 *Cyber-Savvy Technologist & UX Designer*  
 Nairobi, Kenya • 2025
-
-
