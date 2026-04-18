@@ -106,7 +106,7 @@ function Blog() {
           <div className="blog-social">
             <span>Follow my writing:</span>
             <a href="https://medium.com/@faithmagret" className="blog-social-link" target="_blank" rel="noopener noreferrer">
-              <PenLine size={18} />
+              <img src="images/medium-logo.svg" alt="Medium" width="18" height="18" />
             </a>
             <a href="https://linkedin.com/in/magretfaith" className="blog-social-link" target="_blank" rel="noopener noreferrer">
               <Linkedin size={18} />
